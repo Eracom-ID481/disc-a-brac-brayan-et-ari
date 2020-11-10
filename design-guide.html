@@ -4,201 +4,201 @@
     <meta charset="utf-8" />
     <title>Design Guide and Base CSS – Simple version</title>
     <style type="text/css" media="screen">
-      /*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
-      /*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
-      /*	TYPOGRAPHY	*/
+        /*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+        /*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+        /*	TYPOGRAPHY	*/
 
-      /*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
-      /*	FONTS	*/
-      @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Quicksand&display=swap");
-      /* @import statements need to be the _first_ items in a CSS file… */
+        /*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+        /*	FONTS	*/
+        @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Quicksand&display=swap");
+        /* @import statements need to be the _first_ items in a CSS file… */
 
-      /* body */
+        /* body */
 
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        font-family: "Amatic SC", cursive;
-      }
-      body {
-        font-family: "Quicksand", sans-serif;
-      }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          font-family: "Amatic SC", cursive;
+        }
+        body {
+          font-family: "Quicksand", sans-serif;
+        }
 
-      .Quicksand,
-      *.Quicksand,
-      h3.Quicksand {
-        font-family: "Quicksand", sans-serif !important;
-      }
-      .Amatic {
-         font-family: "Amatic SC", cursive !important;
-      }
+        .Quicksand,
+        *.Quicksand,
+        h3.Quicksand {
+          font-family: "Quicksand", sans-serif !important;
+        }
+        .Amatic {
+           font-family: "Amatic SC", cursive !important;
+        }
 
-      /*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
-      /*	FONT SIZES	*/
+        /*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+        /*	FONT SIZES	*/
 
-      /*	base default: 1rem = 16 pixels = 12pt = 96dpi */
-      html {
-        font-size: 100%;
-      }
+        /*	base default: 1rem = 16 pixels = 12pt = 96dpi */
+        html {
+          font-size: 100%;
+        }
 
-      body,
-      p {
-        font-size: 1rem;
-      } /* 16px | 12pt */
+        body,
+        p {
+          font-size: 1rem;
+        } /* 16px | 12pt */
 
-      h1 {
-        font-size: 3rem;
-      } /* 48px | 36pt */
-      h2 {
-        font-size: 2.5rem;
-      } /* 40px | 30pt */
-      h3 {
-        font-size: 1.75rem;
-      } /* 28px | 21pt */
-      h4 {
-        font-size: 1.5rem;
-      } /* 24px | 18pt */
-      h5 {
-        font-size: 1.25rem;
-      } /* 20px | 15pt */
-      h6 {
-        font-size: 1rem;
-      } /* 16px | 12pt */
-      small,
-      .small {
-        font-size: 95%;
-      } /* 13.6px | 10.2pt */
-      /* standard default ~= 0.8em = ~13px = ~10pt */
+        h1 {
+          font-size: 3rem;
+        } /* 48px | 36pt */
+        h2 {
+          font-size: 2.5rem;
+        } /* 40px | 30pt */
+        h3 {
+          font-size: 1.75rem;
+        } /* 28px | 21pt */
+        h4 {
+          font-size: 1.5rem;
+        } /* 24px | 18pt */
+        h5 {
+          font-size: 1.25rem;
+        } /* 20px | 15pt */
+        h6 {
+          font-size: 1rem;
+        } /* 16px | 12pt */
+        small,
+        .small {
+          font-size: 95%;
+        } /* 13.6px | 10.2pt */
+        /* standard default ~= 0.8em = ~13px = ~10pt */
 
-      /*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
-      /*	FONT-STYLE	*/
+        /*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+        /*	FONT-STYLE	*/
 
-      h2 {
-        font-style: italic;
-      }
+        h2 {
+          font-style: italic;
+        }
 
-      /*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
-      /*	FONT WEIGHTS	*/
+        /*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+        /*	FONT WEIGHTS	*/
 
-      /* CSS Font Weights
-      	100 (ultralight) – 900 (extrabold)
-      	400 = normal
-      	700 = bold
-      */
+        /* CSS Font Weights
+          100 (ultralight) – 900 (extrabold)
+          400 = normal
+          700 = bold
+        */
 
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        font-weight: 500;
-      }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          font-weight: 500;
+        }
 
-      /*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
-      /*	LINE HEIGHT	*/
+        /*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+        /*	LINE HEIGHT	*/
 
-      /*	we're using _em_ for line height,
-      	so it's proportional to the _text size_ …	*/
+        /*	we're using _em_ for line height,
+          so it's proportional to the _text size_ …	*/
 
-      body,
-      p {
-        line-height: 1.33em;
-      }
+        body,
+        p {
+          line-height: 1.33em;
+        }
 
-      h1,
-      h2,
-      h3,
-      h4 {
-        line-height: 1em;
-      }
+        h1,
+        h2,
+        h3,
+        h4 {
+          line-height: 1em;
+        }
 
-      .small {
-        line-height: 1.5em;
-      }
+        .small {
+          line-height: 1.5em;
+        }
 
-      /*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
-      /*	LETTER-SPACING	*/
+        /*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+        /*	LETTER-SPACING	*/
 
-      .small {
-        letter-spacing: 0.025em;
-      }
+        .small {
+          letter-spacing: 0.025em;
+        }
 
-      /*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
-      /*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
-      /*	COLOR */
+        /*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+        /*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+        /*	COLOR */
 
-      /*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
-      /*	Blue
-      	Hex:	#1F5C99
-      	RGB:	31  92  153
-      	HSB:	210°  80%  60%
-      	CMYK:	93%  68%  13%  1%
-      	Lab:	38  -2  -40
-      */
-      .blue,
-      .blue * {
-        color: #2f2542;
-      }
+        /*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+        /*	Blue
+          Hex:	#1F5C99
+          RGB:	31  92  153
+          HSB:	210°  80%  60%
+          CMYK:	93%  68%  13%  1%
+          Lab:	38  -2  -40
+        */
+        .blue,
+        .blue * {
+          color: #2f2542;
+        }
 
-      /*	COLOR	*/
+        /*	COLOR	*/
 
-      body {
-      }
+        body {
+        }
 
-      h1,
-      h2,
-      h3,
-      h4 {
-        color: #2f3542;
-      }
+        h1,
+        h2,
+        h3,
+        h4 {
+          color: #2f3542;
+        }
 
-      a:link,
-      a:visited,
-      a:hover,
-      a:active {
-        color: #2f3542;
-      }
+        a:link,
+        a:visited,
+        a:hover,
+        a:active {
+          color: #2f3542;
+        }
 
-      /*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
-      /*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
-      /*	STYLING ELEMENTS	*/
+        /*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+        /*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+        /*	STYLING ELEMENTS	*/
 
-      /*	LINKS	*/
-      a:link,
-      a:visited,
-      a:hover,
-      a:active {
-      }
-      a:link {
-      }
-      a:visited {
-      }
-      a:hover {
-        background-color: rgba(31, 92, 153, 0.1);
-      }
-      a:active {
-      }
+        /*	LINKS	*/
+        a:link,
+        a:visited,
+        a:hover,
+        a:active {
+        }
+        a:link {
+        }
+        a:visited {
+        }
+        a:hover {
+          background-color: rgba(31, 92, 153, 0.1);
+        }
+        a:active {
+        }
 
-      /*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
-      /*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+        /*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+        /*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
 
-      /*
-      	If you want to use variables:
-      	first, define them in a root selector:
-      		:root {
-      			--aVar: #F1357A;
-      		}
-      	Then you can use them in elements:
-      		h1 {
-      			background-color: var(--aVar);
-      		}
-      	https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
-      	https://caniuse.com/?search=CSS%20custom%20properties
-      */
+        /*
+          If you want to use variables:
+          first, define them in a root selector:
+            :root {
+              --aVar: #F1357A;
+            }
+          Then you can use them in elements:
+            h1 {
+              background-color: var(--aVar);
+            }
+          https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
+          https://caniuse.com/?search=CSS%20custom%20properties
+        */
     </style>
   </head>
 
