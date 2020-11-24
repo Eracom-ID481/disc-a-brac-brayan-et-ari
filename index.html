@@ -26,7 +26,15 @@
           <li><a href="#news">styles musicaux</a></li>
           <li><a href="#contact">sorties de la semaines</a></li>
           <li><a href="#about">contact</a></li>
-
+          <div class="down">
+          <a href="https://www.instagram.com/architari" target="blank">
+            <img style="width: 25px" src="img/instagram.png" width="100px">
+          </a>
+          <a href="https://www.twitter.com" target="blank">
+            <img style="width: 20px" src="img/twitter.png" width="150px"> </a>	
+            <a href="https://www.facebook.com" target="blank">
+          <img style="width: 25px" src="img/facebook.png" width="150px"> </a>
+        </div>
         </nav>
         <div id="Menu">
           <div class="addresse">
@@ -36,34 +44,45 @@
             <h1>mardi au vendredi	11:00–18:30</h1>
             <h1>samedi	10:00–18:00</h1>
             <h1>dimanche	Fermé</h1>
+            
           </div> 
             <img class="image-principale" src="img/random.jpg">
         </div>
-
+       
+          </div>
         <section class="container" id="styles">
           <div class="gauche">
             <h1>Style musicaux</h1>
+            <br>
             <ul>
               <li>Rock</li>
               <li>Metal</li>
               <li>Hard Style</li>
+              <li>Acid blues</li>
+              <li>Art punk</li>
+              <li>Blues</li>
+              <li>Disco</li>
+              <li>Electro</li>
+
             </ul>
           </div>
           <div class="droite">
-            <img src="img/random.jpg" alt="">
+            <img src="img/vynil.jpg" alt="">
           </div>
 
         </section>
-        <style>
+        <div class="blue">
+          <h1> sorties de la semaine </h1>
+        </div>
         
-        .wgh-slider{ outline : 1px solid pink;}
-        .wgh-slider__viewport{ outline: 1px solid blue  ;}
-        .wgh-slider-item{outline: 1px solid green  ;}
-        .wgh-slider-item-figure {outline: 1px solid red  ;}
-        .wgh-slider-item-figure__caption {outline: 1px solid black  ;}
-
-
-        </style>
+        <audio id="sound1" src="music/music.mp3" preload="auto"></audio>
+        <button onclick="document.getElementById('sound1').play();"><img src="img/cover3.jpg">
+       </button>
+        
+          <audio id="sound1" src="assets/donkey2.mp3" preload="auto"></audio>
+          <a class="icon fa-volume-up" onclick="document.getElementById('sound1').play();"></a></p>
+              
+      
 <div class="container">
   <div class="wgh-slider">
     <input class="wgh-slider-target" type="radio" id="slide-1" name="slider"/>
@@ -133,5 +152,6 @@
         <br>
         <br>
         <br>
-        </body>
+
+         
 </html>

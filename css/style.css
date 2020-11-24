@@ -243,7 +243,27 @@ img.image-principale {
   align-items: center;
 }
 
+.blue{
+color: #2f3542;
+display: grid;
+place-items: center;
+height: 14vh;
+width: 100%;
 
+
+}
+
+ul{
+list-style-type: none;
+}
+
+.down{
+  margin-top: 23px;
+}
+
+button{
+border: none;
+}
 -----------------------------------------------------------------
 
 .container {
@@ -257,7 +277,8 @@ img.image-principale {
   top: 50%;
   width: 100%;
   transform: translateY(-30%);
-  transform: translateX(25%);
+  transform: translateX(25.2%);
+  width: 100%;
 }
 .wgh-slider__viewport {
   position: relative;
@@ -483,7 +504,7 @@ inputself-target {
   transform: translate3d(0, 0, 0) rotateY(-45deg) !important;
 }
 
-/*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+
 /*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
 
 /*
