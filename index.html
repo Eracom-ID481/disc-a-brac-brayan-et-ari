@@ -20,7 +20,7 @@
     </head>
         <body>
             
-        <nav>
+        <nav class="desktop-nav">
             
           <li><img src="img/logo_dab.svg" id="Logo"></li>
           <li><a href="#news">styles musicaux</a></li>
@@ -36,6 +36,14 @@
           <img style="width: 25px" src="img/facebook.png" width="150px"> </a>
         </div>
         </nav>
+
+        <nav class="mobile-nav">
+          <div>
+            <h1>Disc-a-Brac</h1>
+          </div>
+
+        </nav>
+
         <div id="Menu">
           <div class="addresse">
             <h1>Disc à Brac</h1>
@@ -95,7 +103,11 @@
         <div class="wgh-slider__container">
           <div class="wgh-slider-item">
             <div class="wgh-slider-item__inner">
+              <audio id="sound1" src="music/music.mp3" preload="auto"></audio>
+        <button onclick="document.getElementById('sound1').play();">
               <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image" src="img/cover2.jpg" alt="The Provider"/>
+              </button> <audio id="sound1" src="assets/donkey2.mp3" preload="auto"></audio>
+              <a class="icon fa-volume-up" onclick="document.getElementById('sound1').play();"></a></p>
                 <figcaption class="wgh-slider-item-figure__caption"><a href="img/cover2.jpg">AESOP ROCK</a><span>Spirit world</span></figcaption>
               </figure>
               <label class="wgh-slider-item__trigger" for="slide-1" title="Show product 1"></label>
