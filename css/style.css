@@ -303,6 +303,15 @@ button {
   text-align: center;
 }
 
+/* la suite du hack de merde de Cater… */
+.ex_container {
+  position: relative;
+  margin-top: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
 .icon {
   width: 2em;
   height: 2em;
