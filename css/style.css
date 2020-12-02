@@ -249,12 +249,17 @@ img.image-principale {
   color: #2f3542;
   display: grid;
   place-items: center;
-  height: 14vh;
+  height: 29vh;
   width: 100%;
 }
 
 ul {
   list-style-type: none;
+  font-size: 22px;
+}
+
+li {
+  padding: 4px;
 }
 
 .down {
@@ -297,7 +302,6 @@ button {
 
 .container {
   position: relative;
-  margin-top: 100px;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
@@ -317,4 +321,20 @@ button {
   height: 2em;
   margin-left: auto;
   margin-right: auto;
+}
+
+.player-container {
+  position: relative;
+}
+
+.player-container button.play {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+.player-container button.stop {
+  position: absolute;
+  bottom: 0px;
+  left: 28px;
 }
